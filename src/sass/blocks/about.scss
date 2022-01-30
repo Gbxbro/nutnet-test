@@ -1,0 +1,36 @@
+.about {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    // .about__left
+    &__left {
+        width: 235px;
+        height: 230px;
+    }
+
+    // .about__left-image
+    &__left-image {
+
+    }
+
+    // .about__right
+    &__right {
+
+    }
+
+    // .about__right-title
+    &__right-title {
+        margin-bottom: 28px;
+    }
+
+    // .about__right-description
+    &__right-description {
+        color: #413d4b;
+        margin-bottom: 30px;
+    }
+
+    // .about__right-button
+    &__right-button {
+
+    }
+}

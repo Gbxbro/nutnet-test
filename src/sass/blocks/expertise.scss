@@ -1,0 +1,34 @@
+.expertise {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  // .expertise__title
+  &__title {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  // .expertise__description
+  &__description {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #2f2d35;
+    letter-spacing: calc((14 * 75) / 1000) + px;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  // .expertise__separator
+  &__separator {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #c6c4c9;
+    margin: 0 auto 48px;
+  }
+
+  // .expertise__list
+  &__list {
+    list-style: none;
+  }
+}

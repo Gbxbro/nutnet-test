@@ -20,19 +20,19 @@ var path = {
         html: "dist/",
         js: "dist/js/",
         css: "dist/css/",
-        images: "dist/img/"
+        images: "dist/images/"
     },
     src: {
         html: "src/*.html",
         js: "src/js/*.js",
         css: "src/sass/style.scss",
-        images: "src/img/**/*.{jpg,png,svg,gif,ico}"
+        images: "src/images/**/*.{jpg,png,svg,gif,ico}"
     },
     watch: {
         html: "src/**/*.html",
         js: "src/js/**/*.js",
         css: "src/sass/**/*.scss",
-        images: "src/img/**/*.{jpg,png,svg,gif,ico}"
+        images: "src/images/**/*.{jpg,png,svg,gif,ico}"
     },
     clean: "./dist"
 }
@@ -63,9 +63,7 @@ function html() {
 function css() {
     return src(path.src.css, { base: "src/sass/" })
         .pipe(plumber())
-        .pipe(sass({
-            includePaths: require("node-normalize-scss").includePaths
-            })
+        .pipe(sass()
         )
         .pipe(autoprefixer({
             browsers: ['last 8 versions'],
@@ -103,7 +101,8 @@ function js() {
 
 function images() {
     return src(path.src.images)
-        .pipe(imagemin())
+        // .pipe(plumber())
+        // .pipe(imagemin())
         .pipe(dest(path.build.images));
 }
 

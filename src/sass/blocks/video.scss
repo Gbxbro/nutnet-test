@@ -1,0 +1,32 @@
+.video {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background: url('../../images/video-background.jpg') bottom center / 100% 100% no-repeat;
+
+  // .video__watch
+  &__watch {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  // .video__watch-image
+  &__watch-image {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 auto 34px;
+  }
+
+  // .video__watch-title
+  &__watch-title {
+    font-size: 16px;
+    font-weight: 900;
+    color: $white;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: center;
+  }
+}

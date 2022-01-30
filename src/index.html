@@ -1,15 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:wght@400;700;900&family=Roboto:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
+
 <body>
-    <div class="container">
-        
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="header__inner row">
+                    <a class="header__logo col-2" href="#">
+                        <div class="header__logo-image">
+                            <img src="./images/logo.png" alt="logo">
+                        </div>
+                        <div class="header__logo-text">tajam</div>
+                    </a>
+                    <nav class="header__navbar menu col-7 offset-3">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__list-link">Home</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__list-link">About</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__list-link">Expertise</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__list-link">Teams</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__list-link">Works</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__list-link">People say</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__list-link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <main class="main">
+                    <h1 class="main__title">
+                        We Are Awesome Creative Agency
+                    </h1>
+                    <span class="main__line"></span>
+                    <p class="main__description">
+                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                        sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id
+                        elit. Duis
+                        sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                    </p>
+                    <button class="main__button btn">
+                        Learn more
+                    </button>
+                </main>
+            </div>
+        </header>
+
+        <section class="about">
+            <div class="container">
+                <div class="about__inner row">
+                    <div class="about__left col-3 offset-1">
+                        <img class="about__left-image" src="./images/color-logo.png" alt="color-logo">
+                    </div>
+                    <div class="about__right col-7 offset-1">
+                        <h2 class="about__right-title title">
+                            Our story
+                        </h2>
+                        <p class="about__right-description description">
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                            sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                            Duis sed odio sit amet nibh vulputate cursus
+                        </p>
+                        <p class="about__right-description description">
+                            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
+                            vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per inceptos himenaeos.
+                        </p>
+                        <button class="about__right-button btn">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="container">
+                <button class="video__watch">
+                    <div class="video__watch-image">
+                        <img src="./images/play.png" alt="play">
+                    </div>
+                    <h3 class="video__watch-title">Watch our story</h3>
+                </button>
+            </div>
+        </section>
+
+        <section class="expertise">
+            <div class="container">
+                <h2 class="expertise__title title">
+                    Expertise
+                </h2>
+                <p class="expertise__description">
+                    Lorem ipsum dolor sit amet proin gravida nibh vel velit
+                </p>
+                <span class="expertise__separator"></span>
+                <ul class="expertise__list row row-cols-4">
+                    <li class="expertise__item expertise-item col-4">
+                        <div class="expertise-item__image">
+                            <i class="expertise-icon_desktop"></i>
+                        </div>
+                        <h3 class="expertise-item__title item-title">
+                            Web design & Development
+                        </h3>
+                        <p class="expertise-item__description description">
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+                        </p>
+                    </li>
+                    <li class="expertise__item expertise-item col-4">
+                        <div class="expertise-item__image">
+                            <i class="expertise-icon_brush"></i>
+                        </div>
+                        <h3 class="expertise-item__title item-title">
+                            Branding Identity
+                        </h3>
+                        <p class="expertise-item__description description">
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+                        </p>
+                    </li>
+                    <li class="expertise__item expertise-item col-4">
+                        <div class="expertise-item__image">
+                            <i class="expertise-icon_mobile"></i>
+                        </div>
+                        <h3 class="expertise-item__title item-title">
+                            Mobile App
+                        </h3>
+                        <p class="expertise-item__description description">
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+                        </p>
+                    </li>
+                    <li class="expertise__item expertise-item col-4">
+                        <div class="expertise-item__image">
+                            <i class="expertise-icon_diagram"></i>
+                        </div>
+                        <h3 class="expertise-item__title item-title">
+                            Search Engine Optimization
+                        </h3>
+                        <p class="expertise-item__description description">
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+                        </p>
+                    </li>
+                    <li class="expertise__item expertise-item col-4">
+                        <div class="expertise-item__image">
+                            <i class="expertise-icon_game"></i>
+                        </div>
+                        <h3 class="expertise-item__title item-title">
+                            Game Development
+                        </H3>
+                        <p class="expertise-item__description description">
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+                        </p>
+                    </li>
+                    <li class="expertise__item expertise-item col-4">
+                        <div class="expertise-item__image">
+                            <i class="expertise-icon_heart"></i>
+                        </div>
+                        <h3 class="expertise-item__title item-title">
+                            Made With Love
+                        </h3>
+                        <p class="expertise-item__description description">
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
     </div>
 </body>
+
 </html>

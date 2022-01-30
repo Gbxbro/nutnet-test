@@ -1,2 +1,90 @@
-// import bootstrap grid
-@import '../../node_modules/bootstrap/scss/bootstrap-grid'
+@import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/bootstrap/scss/bootstrap-grid';
+@import './variables';
+@import './sprites';
+
+// Общие стили
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    min-height: 100%;
+}
+
+.btn {
+    font-family: 'Hammersmith One', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: $primary;
+    background-color: transparent;
+    padding: 15px;
+    border: 1px solid $primary;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid $white;
+        color: $white;
+        background-color: $primary;
+    }
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: calc((50 * 22) / 1000) + px;
+    text-transform: uppercase;
+    color: #413d4b;
+}
+
+.item-title {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: calc((50 * 14) / 1000) + px;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+// blocks
+@import './blocks/header';
+@import './blocks/menu';
+@import './blocks/main';
+@import './blocks/about';
+@import './blocks/video';
+@import './blocks/expertise';
+@import './blocks/expertise-item';
+
+
+// font-family: 'Hammersmith One', sans-serif;
+// font-family: 'Playfair Display', serif;
+// font-family: 'Roboto', sans-serif;
