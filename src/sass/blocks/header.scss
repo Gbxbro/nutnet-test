@@ -1,6 +1,6 @@
 .header {
     padding-top: 15px;
-    background: url('../../images/main-background.jpg') bottom center / 100% 100% no-repeat;
+    background: url('../../images/backgrounds/main-background.jpg') bottom center / 100% 100% no-repeat;
 
     // header__inner
     &__inner {
@@ -9,25 +9,9 @@
         justify-content: space-between;
     }
 
-    // .header__logo
-    &__logo {
-        text-decoration: none;
+    // .header__box
+    &__box {
         display: flex;
-        align-items: center;
-        gap: 14px;
-        cursor: pointer;
-    }
-
-    // .header__logo-image
-    &__logo-image {
-        width: 44px;
-        height: 50px;
-    }
-
-    // .header__logo-text
-    &__logo-text {
-        font-size: 3rem;
-        font-weight: 100;
-        color: $primary;
+        justify-content: end;
     }
 }

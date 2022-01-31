@@ -1,0 +1,7 @@
+.company {
+  margin-bottom: 35px;
+
+  @include breakpoint($sm) {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,45 @@
+.socials-icon__dribble,
+.socials-icon__facebook,
+.socials-icon__gplus,
+.socials-icon__instagram,
+.socials-icon__twitter,
+.socials-icon__youtube {
+  display: block;
+  background-image: url('../../images/sprites/socials-sprite.png');
+}
+
+.socials-icon__dribble {
+  width: 35px;
+  height: 35px;
+  background-position: -10px -10px;
+}
+
+.socials-icon__facebook {
+  width: 35px;
+  height: 35px;
+  background-position: -65px -10px;
+}
+
+.socials-icon__gplus {
+  width: 35px;
+  height: 35px;
+  background-position: -10px -65px;
+}
+
+.socials-icon__instagram {
+  width: 35px;
+  height: 35px;
+  background-position: -65px -65px;
+}
+
+.socials-icon__twitter {
+  width: 35px;
+  height: 35px;
+  background-position: -120px -10px;
+}
+
+.socials-icon__youtube {
+  width: 35px;
+  height: 35px;
+  background-position: -120px -65px;
+}

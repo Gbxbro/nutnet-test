@@ -1,0 +1,53 @@
+.address {
+  margin-bottom: 35px;
+
+  @include breakpoint($sm) {
+    margin-bottom: 0;
+  }
+
+  // .address__info
+  &__info {
+    max-width: 283px;
+    margin: 0 auto;
+  }
+
+  // .address__description
+  &__description {
+    font-family: 'Myriad Pro', sans-serif;
+    @extend %footer-font;
+    font-weight: 400;
+    max-width: 250px;
+    padding-left: 30px;
+    margin-bottom: 25px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 19px;
+      top: 0;
+      left: 0;
+      background: url('../../images/icons/place.png') 0 0 / cover no-repeat;
+    }
+  }
+
+  // .address__phone
+  &__phone {
+    @extend %footer-font;
+    font-weight: 300;
+    white-space: nowrap;
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      top: 0;
+      left: 0;
+      background: url('../../images/icons/call.png') 0 0 / cover no-repeat;
+    }
+  }
+}

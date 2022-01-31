@@ -9,6 +9,20 @@
         gap: 25px;
     }
 
+    // .menu__list_mobile
+    &__list_mobile {
+        display: none;
+        width: 100%;
+        list-style: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+
+        & > .menu__list-link {
+            font-size: 2.1rem;
+        }
+    }
+
     // .menu__list-item
     &__list-item {
         cursor: pointer;

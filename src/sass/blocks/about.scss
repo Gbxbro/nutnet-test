@@ -8,19 +8,14 @@
         height: 230px;
     }
 
-    // .about__left-image
-    &__left-image {
-
-    }
-
-    // .about__right
-    &__right {
-
-    }
-
     // .about__right-title
     &__right-title {
+        text-align: center;
         margin-bottom: 28px;
+
+        @include breakpoint($md) {
+            text-align: left;
+        }
     }
 
     // .about__right-description
@@ -31,6 +26,11 @@
 
     // .about__right-button
     &__right-button {
+        display: block;
+        margin: 0 auto;
 
+        @include breakpoint($md) {
+            margin: 0;
+        }
     }
 }

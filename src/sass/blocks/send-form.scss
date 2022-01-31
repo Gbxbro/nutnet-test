@@ -1,0 +1,42 @@
+.send-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 27px;
+
+  // .send-form__input
+  &__input {
+    background-color: transparent;
+    height: 45px;
+    border: 1px solid #9e97b0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0 15px;
+    @extend %footer-font;
+
+    &::placeholder {
+      color: #9e97b0;
+    }
+  }
+
+  // .send-form__submit
+  &__submit {
+    border: none;
+    background-color: #9e97b0;
+    height: 45px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: url('../../images/icons/send.png') 0 0 / cover no-repeat;
+    }
+  }
+}

@@ -1,7 +1,11 @@
 @import '../../node_modules/normalize.css/normalize';
 @import '../../node_modules/bootstrap/scss/bootstrap-grid';
 @import './variables';
-@import './sprites';
+@import './mixins';
+
+// Спрайты
+@import 'sprites/expertise-sprite';
+@import 'sprites/socials-sprite';
 
 // Общие стили
 *,
@@ -75,16 +79,43 @@ img {
     font-weight: 300;
 }
 
+.subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    letter-spacing: calc((14 * 75) / 1000) + px;
+}
+
+.separator {
+    display: block;
+    width: 50px;
+    height: 2px;
+}
+
 // blocks
 @import './blocks/header';
+@import './blocks/logo';
 @import './blocks/menu';
+@import './blocks/burger-button';
 @import './blocks/main';
 @import './blocks/about';
 @import './blocks/video';
 @import './blocks/expertise';
 @import './blocks/expertise-item';
-
+@import './blocks/team';
+@import './blocks/employee';
+@import './blocks/works';
+@import './blocks/testimonials';
+@import './blocks/testimonials-item';
+@import './blocks/person-list';
+@import './blocks/contact';
+@import './blocks/contact-form';
+@import './blocks/footer';
+@import './blocks/company';
+@import './blocks/address';
+@import './blocks/send-form';
+@import './blocks/socials-list';
 
 // font-family: 'Hammersmith One', sans-serif;
 // font-family: 'Playfair Display', serif;
 // font-family: 'Roboto', sans-serif;
+// font-family: 'Myriad Pro', sans-serif

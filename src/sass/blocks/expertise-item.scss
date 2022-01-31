@@ -1,17 +1,37 @@
 .expertise-item {
   padding: 30px 30px 40px 25px;
 
-  &:nth-child(1),
-  &:nth-child(2),
-  &:nth-child(4),
-  &:nth-child(5) {
-    border-right: 1px solid $border;
+  @include  breakpoint($xs) {
+    &:not(:last-child) {
+      border-bottom: 1px solid $border;
+    }
   }
 
-  &:nth-child(1),
-  &:nth-child(2),
-  &:nth-child(3),{
+  @include breakpoint($md) {
+
+    &:nth-child(odd) {
+      border-right: 1px solid $border;
+    }
     border-bottom: 1px solid $border;
+  }
+
+  @include breakpoint($lg) {
+    & {
+      border: none;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(5) {
+      border-right: 1px solid $border;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),{
+      border-bottom: 1px solid $border;
+    }
   }
 
   // .expertise-item__image
