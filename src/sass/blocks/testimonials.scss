@@ -1,13 +1,13 @@
 .testimonials {
   padding-top: 70px;
   padding-bottom: 70px;
-  background: url('../images/backgrounds/testimonials-background.jpg') bottom center / 100% 100% no-repeat;
+  background: url('../../images/backgrounds/testimonials-background.jpg') bottom center / 100% 100% no-repeat;
 
   // .testimonials__prefix-icon
   &__prefix-icon {
     width: 32px;
     height: 26px;
-    background: url('../images/icons/prefix.png') 0 0 / cover no-repeat;
+    background: url('../../images/icons/prefix.png') 0 0 / cover no-repeat;
     margin: 0 auto 40px;
   }
 }
