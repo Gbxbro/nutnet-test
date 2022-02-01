@@ -11,28 +11,29 @@ const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
+const pug = require("gulp-pug");
 const browsersync = require("browser-sync").create();
 
 
 /* Paths */
-var path = {
+let path = {
     build: {
         html: "dist/",
         js: "dist/js/",
         css: "dist/css/",
-        images: "dist/img/"
+        images: "dist/images/"
     },
     src: {
-        html: "src/*.html",
-        js: "src/js/*.js",
+        html: "src/*.pug",
+        js: "src/js/**/*.js",
         css: "src/sass/style.scss",
-        images: "src/img/**/*.{jpg,png,svg,gif,ico}"
+        images: "src/images/**/*.{jpg,png,svg,gif,ico}"
     },
     watch: {
-        html: "src/**/*.html",
+        html: "src/**/*.pug",
         js: "src/js/**/*.js",
         css: "src/sass/**/*.scss",
-        images: "src/img/**/*.{jpg,png,svg,gif,ico}"
+        images: "src/images/**/*.{jpg,png,svg,gif,ico}"
     },
     clean: "./dist"
 }
@@ -55,17 +56,19 @@ function browserSyncReload() {
 
 function html() {
     return src(path.src.html, { base: "src/" })
-        .pipe(plumber())
+        // .pipe(plumber())
+        .pipe(pug({
+                pretty: true
+            }
+        ))
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream());
 }
 
 function css() {
     return src(path.src.css, { base: "src/sass/" })
-        .pipe(plumber())
-        .pipe(sass({
-            includePaths: require("node-normalize-scss").includePaths
-            })
+        // .pipe(plumber())
+        .pipe(sass()
         )
         .pipe(autoprefixer({
             browsers: ['last 8 versions'],
@@ -89,8 +92,8 @@ function css() {
 }
 
 function js() {
-    return src(path.src.js, {base: './src/assets/js/'})
-        .pipe(plumber())
+    return src(path.src.js, {base: './src/js/'})
+        // .pipe(plumber())
         .pipe(dest(path.build.js))
         .pipe(uglify())
         .pipe(rename({
@@ -103,7 +106,8 @@ function js() {
 
 function images() {
     return src(path.src.images)
-        .pipe(imagemin())
+        // .pipe(plumber())
+        // .pipe(imagemin())
         .pipe(dest(path.build.images));
 }
 

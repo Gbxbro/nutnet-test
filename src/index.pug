@@ -1,0 +1,194 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:wght@400;700;900&family=Roboto:wght@100;300;400;700;900&display=swap' rel='stylesheet')
+  link(href='http://fonts.cdnfonts.com/css/myriad-pro' rel='stylesheet')
+  link(rel='stylesheet' type='text/css' href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
+  link(rel='stylesheet' href='./css/style.min.css')
+body
+  .wrapper
+    header.header
+      .container
+        .header__inner.row
+          a.logo.col.col-lg-2(href='#')
+            .logo__image
+              img(src='./images/logo/logo.png' alt='logo')
+            .logo__text tajam
+          .header__box.col.d-flex.d-lg-none
+            button.burger-button(type='button')
+              span
+          nav.header__navbar.menu.col-lg-7.offset-lg-3.d-none.d-lg-block
+            ul.menu__list
+              each listItem in ['Home', 'About', 'Expertise', 'Teams', 'Works', 'People say', 'Contact']
+                li.menu__list-item
+                  a.menu__list-link(href='#')= listItem
+            ul.menu__list_mobile
+              each listItem in ['Home', 'About', 'Expertise', 'Teams', 'Works', 'People say', 'Contact']
+                li.menu__list-item
+                  a.menu__list-link(href='#')= listItem
+
+        main.main
+          h1.main__title We Are Awesome Creative Agency
+          span.main__line
+          p.main__description This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+          button.main__button.btn Learn more
+
+    section.about
+      .container
+        .about__inner.row.justify-content-center
+          .about__left.col-auto.mb-5.mb-md-0.col-md-3.offset-md-1
+            img.about__left-image(src='./images/logo/color-logo.png' alt='color-logo')
+          .about__right.col-auto.col-md-6.offset-md-1
+            h2.about__right-title.title.text-md-start
+              | Our story
+            p.about__right-description.description
+              | This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+            p.about__right-description.description Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            button.about__right-button.btn Learn more
+
+    section.video
+      .container
+        button.video__watch(data-action='play')
+          .video__watch-image
+            img(src='./images/icons/play.png' alt='play')
+          h3.video__watch-title Watch our story
+
+    section.expertise
+      .container
+        h2.expertise__title.title Expertise
+        p.expertise__subtitle.subtitle Lorem ipsum dolor sit amet proin gravida nibh vel velit
+        span.expertise__separator.separator
+        ul.expertise__list.row.row-cols-1.row-cols-md-2.row-cols-lg-3
+          li.expertise__item.expertise-item.col.col-md-6.col-lg-4
+            .expertise-item__image
+              i.expertise-icon_desktop
+            h3.expertise-item__title.item-title Web design & Development
+            p.expertise-item__description.description This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+          li.expertise__item.expertise-item.col.col-md-6.col-lg-4
+            .expertise-item__image
+              i.expertise-icon_brush
+            h3.expertise-item__title.item-title Branding Identity
+            p.expertise-item__description.description This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+          li.expertise__item.expertise-item.col.col-md-6.col-lg-4
+            .expertise-item__image
+              i.expertise-icon_mobile
+            h3.expertise-item__title.item-title Mobile App
+            p.expertise-item__description.description This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+          li.expertise__item.expertise-item.col.col-md-6.col-lg-4
+            .expertise-item__image
+              i.expertise-icon_diagram
+            h3.expertise-item__title.item-title Search Engine Optimization
+            p.expertise-item__description.description This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+          li.expertise__item.expertise-item.col.col-md-6.col-lg-4
+            .expertise-item__image
+              i.expertise-icon_game
+            h3.expertise-item__title.item-title Game Development
+            p.expertise-item__description.description This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+          li.expertise__item.expertise-item.col.col-md-6.col-lg-4
+            .expertise-item__image
+              i.expertise-icon_heart
+            h3.expertise-item__title.item-title Made With Love
+            p.expertise-item__description.description This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+
+    section.team
+      .container
+        h2.team__title.title Meet our amazing team
+        p.team__subtitle.subtitle Lorem ipsum dolor sit amet proin gravida nibh vel velit
+        span.team__separator.separator
+        ul.team__list.row
+          mixin employee(name, position)
+            li.team__list-item.employee.col-12.col-sm-6.col-lg-3
+              .employee__image
+              .employee__info
+                h4.employee__title=name
+                .employee__subtitle=position
+          +employee('Semf Ucuk', 'Ceo & Founder')
+          +employee('Dok Adalin', 'Engineering')
+          +employee('Jeng Kol', 'Designer')
+          +employee('Pet Romak', 'Marketing')
+        .team__description Become part of our dream team, let’s join us !
+        button.team__button.btn We are hiring
+
+    section.works
+      .container
+        .works__inner.row
+          h2.works__title.title.col-12.col-sm-6 Our works
+          div.works__link.col-12.col-sm-6
+            a(href='#dribble') projects in dribble
+      ul.works__list.row
+        - for (let i = 0; i < 12; i++)
+            li.works__list-item.col-6.col-sm-4.col-md-3.col-lg-2
+      button.works__button.btn Load more
+
+    section.testimonials
+      .container(data-testimonials='testimonials')
+        .testimonials__prefix-icon
+        .testimonials__content.testimonials-content(data-testimonials='review')
+        ul.performer-list(data-testimonials='performers')
+
+    section.contact
+      .container
+        h2.contact__title.title Give us a good news
+        form.contact__form.contact-form(method='POST')
+          input.contact-form__input(type='text' placeholder='Name')
+          input.contact-form__input(type='email' placeholder='Email')
+          input.contact-form__input(type='text' placeholder='Subject')
+          textarea.contact-form__textarea(id='message-area' placeholder='Your message')
+          button.contact-form__submit.btn(type='submit') Submit
+    footer.footer
+      .container
+        .footer__inner.row
+          .company.col-12.col-sm-6.col-lg-4
+            a.footer__logo.logo(href='#')
+              .logo__image
+                img(src='./images/logo/logo.png' alt='logo')
+              .logo__text tajam
+            p.footer__description lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
+          .address.col-12.col-sm-6.col-lg-4
+            h3.footer__title Our studio
+            .address__info
+              .address__description Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat<br/> 11480 - Indonesia
+              .address__phone (+62) 21-2224 3333
+          .socials.col-12.col-sm-12.col-lg-4
+            h3.footer__title Stay in touch
+            form.send-form
+              input.send-form__input(type='text' placeholder='Subscribe our newsletter')
+              button.send-form__submit(type='sumbit')
+
+            ul.socials-list
+              li.socials-list__item
+                a.social-list__link(href='#facebook')
+                  i.socials-icon__facebook
+              li.socials-list__item
+                a.social-list__link(href='#twitter')
+                  i.socials-icon__twitter
+              li.socials-list__item
+                a.social-list__link(href='#dribble')
+                  i.socials-icon__dribble
+              li.socials-list__item
+                a.social-list__link(href='#instagram')
+                  i.socials-icon__instagram
+              li.socials-list__item
+                a.social-list__link(href='#gplus')
+                  i.socials-icon__gplus
+              li.socials-list__item
+                a.social-list__link(href='#youtube')
+                  i.socials-icon__youtube
+        .footer__inner.row
+          nav.footer__navbar.menu.col-12.col-sm-6
+            ul.menu__list
+                each listItem in ['Help', 'Terms & Condition', 'Privacy']
+                  li.menu__list-item
+                    a.menu__list-link(href='#')= listItem
+          .footer__copyright.col-12.col-sm-6 Copyright © 2015 - Tajem Creative
+
+  script(type='module' src='./js/modal.js')
+  script(type='module' src='./js/videoModal.js')
+  script(type='module' src='./js/data/data.js')
+  script(type='module' src='./js/selectTestimonials.js')
+  script(type='module' src='./js/index.js')

@@ -1,0 +1,17 @@
+.header {
+    padding-top: 15px;
+    background: url('../../images/backgrounds/main-background.jpg') bottom center / 100% 100% no-repeat;
+
+    // header__inner
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .header__box
+    &__box {
+        display: flex;
+        justify-content: end;
+    }
+}

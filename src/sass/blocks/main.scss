@@ -1,0 +1,42 @@
+.main {
+    padding-top: 165px;
+    padding-bottom: 205px;
+
+    // .main__title
+    &__title {
+        font-family: 'Playfair Display', serif;
+        font-size: 32px;
+        font-weight: 900;
+        color: $white;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+    }
+
+    // .main__line
+    &__line {
+        display: block;
+        background-color: $primary;
+        width: 50px;
+        height: 1px;
+        margin: 0 auto 30px;
+    }
+
+    // .main__description
+    &__description {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        color: $white;
+        max-width: 695px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    // .main__button
+    &__button {
+        display: block;
+        margin: 0 auto;
+    }
+}

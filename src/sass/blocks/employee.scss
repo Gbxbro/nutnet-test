@@ -1,0 +1,49 @@
+.employee {
+  border: 1px solid #7e7a91;
+  overflow: hidden;
+  padding: 0;
+  flex-shrink: 1;
+  flex-grow: 1;
+  max-width: 250px;
+
+  @include breakpoint($lg) {
+    max-width: 220px;
+  }
+
+  // .employee__image
+  &__image {
+    width: 100%;
+    height: 250px;
+    background-color: $white;
+
+    @include breakpoint($lg) {
+      height: 230px;
+    }
+  }
+
+  // .employee__info
+  &__info {
+    padding: 20px 0 30px;
+  }
+
+  // .employee__title
+  &__title {
+    font-size: 14px;
+    letter-spacing: calc((14 * 50) / 1000) + px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    margin-bottom: 12px;
+
+  }
+
+  // .employee__subtitle
+  &__subtitle {
+    font-size: 13px;
+    font-weight: 300;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

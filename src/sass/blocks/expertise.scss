@@ -1,0 +1,28 @@
+.expertise {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  // .expertise__title
+  &__title {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  // .expertise__subtitle
+  &__subtitle {
+    color: #2f2d35;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  // .expertise__separator
+  &__separator {
+    background-color: #c6c4c9;
+    margin: 0 auto 48px;
+  }
+
+  // .expertise__list
+  &__list {
+    list-style: none;
+  }
+}

@@ -1,0 +1,82 @@
+%footer-font {
+  font-size: 14px;
+  line-height: 26px;
+  color: $white;
+  letter-spacing: calc((14 * 25) / 1000) + px;
+}
+
+.footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background: url('../../images/backgrounds/footer-background.jpg') bottom center / 100% 100% no-repeat;
+
+  // .footer__inner
+  &__inner {
+
+  }
+
+  // .footer__logo
+  &__logo {
+    margin-bottom: 26px;
+    justify-content: center;
+
+    @include breakpoint($sm) {
+      justify-content: start;
+    }
+  }
+
+  // .footer__description
+  &__description {
+    @extend %footer-font;
+    font-weight: 300;
+    max-width: 283px;
+    margin: 0 auto;
+
+    @include breakpoint($sm) {
+      margin: 0;
+    }
+  }
+
+  // .footer__title
+  &__title {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 900;
+    color: $white;
+    letter-spacing: calc((15 * 50) / 1000) + px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 26px;
+    text-align: center;
+
+    @include breakpoint($sm) {
+      margin-bottom: 40px;
+      text-align: left;
+    }
+  }
+
+  // .footer__navbar
+  &__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+
+    @include breakpoint($sm) {
+      justify-content: start;
+      margin-bottom: 0;
+    }
+  }
+
+  // .footer__copyright
+  &__copyright {
+    @extend %footer-font;
+    font-weight: 400;
+    text-align: center;
+
+    @include breakpoint($sm) {
+      text-align: right;
+    }
+  }
+}
