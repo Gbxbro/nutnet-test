@@ -6819,7 +6819,7 @@ img {
     height: 13px;
     top: 0;
     right: 0;
-    background: url("../../images/icons/right-arrow.png") 0 0/cover no-repeat;
+    background: url("../images/icons/right-arrow.png") 0 0/cover no-repeat;
 }
 
 .works__link > a:hover {
@@ -6857,7 +6857,7 @@ img {
 .testimonials__prefix-icon {
     width: 32px;
     height: 26px;
-    background: url("../../images/icons/prefix.png") 0 0/cover no-repeat;
+    background: url("../images/icons/prefix.png") 0 0/cover no-repeat;
     margin: 0 auto 40px;
 }
 
