@@ -1,0 +1,21 @@
+// .performer-list
+.performer-list {
+  list-style: none;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+
+  // .performer-list__item
+  &__item {
+    width: 45px;
+    height: 45px;
+    transition: all .2s;
+
+    &.active {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}

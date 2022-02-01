@@ -1,7 +1,15 @@
-// .testimonials-item
-.testimonials-item {
+.testimonials-content {
+  @keyframes show-comment {
+    from {
+      opacity: 0;
+    }
 
-  // .testimonials-item__comment
+    to {
+      opacity: 1;
+    }
+  }
+
+  // .testimonials-content__comment
   &__comment {
     font-family: 'Playfair Display', serif;
     font-size: 16px;
@@ -11,14 +19,15 @@
     text-align: center;
     max-width: 765px;
     margin: 0 auto 50px;
+    animation: show-comment 2s;
   }
 
-  // .testimonials-item__info
+  // .testimonials-content__info
   &__info {
 
   }
 
-  // .testimonials-item__title
+  // .testimonials-content__title
   &__title {
     color: $white;
     text-align: center;
@@ -26,7 +35,7 @@
     white-space: nowrap;
   }
 
-  // .testimonials-item__subtitle
+  // .testimonials-content__subtitle
   &__subtitle {
     font-size: 13px;
     line-height: 22px;

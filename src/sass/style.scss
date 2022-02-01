@@ -92,6 +92,7 @@ img {
 }
 
 // blocks
+@import './blocks/modal';
 @import './blocks/header';
 @import './blocks/logo';
 @import './blocks/menu';
@@ -105,8 +106,8 @@ img {
 @import './blocks/employee';
 @import './blocks/works';
 @import './blocks/testimonials';
-@import './blocks/testimonials-item';
-@import './blocks/person-list';
+@import 'blocks/testimonials-content';
+@import 'blocks/performer-list';
 @import './blocks/contact';
 @import './blocks/contact-form';
 @import './blocks/footer';

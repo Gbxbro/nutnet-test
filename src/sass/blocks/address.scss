@@ -1,7 +1,7 @@
 .address {
   margin-bottom: 35px;
 
-  @include breakpoint($sm) {
+  @include breakpoint($md) {
     margin-bottom: 0;
   }
 
@@ -9,6 +9,10 @@
   &__info {
     max-width: 283px;
     margin: 0 auto;
+
+    @include breakpoint($md) {
+      margin: 0;
+    }
   }
 
   // .address__description

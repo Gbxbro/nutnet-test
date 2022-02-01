@@ -12,7 +12,6 @@ head
   link(rel='stylesheet' href='./css/style.min.css')
 body
   .wrapper
-
     header.header
       .container
         .header__inner.row
@@ -54,7 +53,7 @@ body
 
     section.video
       .container
-        button.video__watch
+        button.video__watch(data-action='play')
           .video__watch-image
             img(src='./images/icons/play.png' alt='play')
           h3.video__watch-title Watch our story
@@ -127,26 +126,10 @@ body
       button.works__button.btn Load more
 
     section.testimonials
-      .container
+      .container(data-testimonials='testimonials')
         .testimonials__prefix-icon
-        ul.testimonials__list
-          mixin content(name, position)
-            li.testimonials__item.testimonials-item
-              .testimonials-item__comment This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
-              h4.testimonials-item__title.item-title=name
-              .testimonials-item__subtitle=position
-          +content('Semf Ucuk', 'Ceo & Founder')
-        ul.person-list
-          li.person__list-item
-            img(src='./images/person/person-1.png', alt='person-1')
-          li.person__list-item
-            img(src='./images/person/person-2.png', alt='person-2')
-          li.person__list-item
-            img(src='./images/person/person-3.png', alt='person-3')
-          li.person__list-item
-            img(src='./images/person/person-4.png', alt='person-4')
-          li.person__list-item
-            img(src='./images/person/person-5.png', alt='person-5')
+        .testimonials__content.testimonials-content(data-testimonials='review')
+        ul.performer-list(data-testimonials='performers')
 
     section.contact
       .container
@@ -160,18 +143,18 @@ body
     footer.footer
       .container
         .footer__inner.row
-          .company.col-12.col-sm-6
+          .company.col-12.col-sm-6.col-lg-4
             a.footer__logo.logo(href='#')
               .logo__image
                 img(src='./images/logo/logo.png' alt='logo')
               .logo__text tajam
             p.footer__description lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
-          .address.col-12.col-sm-6
+          .address.col-12.col-sm-6.col-lg-4
             h3.footer__title Our studio
             .address__info
               .address__description Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat<br/> 11480 - Indonesia
               .address__phone (+62) 21-2224 3333
-          .socials.col-12.col-sm-12
+          .socials.col-12.col-sm-12.col-lg-4
             h3.footer__title Stay in touch
             form.send-form
               input.send-form__input(type='text' placeholder='Subscribe our newsletter')
@@ -204,4 +187,8 @@ body
                     a.menu__list-link(href='#')= listItem
           .footer__copyright.col-12.col-sm-6 Copyright © 2015 - Tajem Creative
 
-  script(type='text/javascript' src='./js/testimonials-slider.js')
+  script(type='module' src='./js/modal.js')
+  script(type='module' src='./js/videoModal.js')
+  script(type='module' src='./js/data/data.js')
+  script(type='module' src='./js/selectTestimonials.js')
+  script(type='module' src='./js/index.js')

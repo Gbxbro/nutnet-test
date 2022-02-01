@@ -1,7 +1,18 @@
 .send-form {
+  max-width: 283px;
   display: flex;
+  flex-direction: column;
   gap: 10px;
-  margin-bottom: 27px;
+  margin: 0 auto 27px;
+
+  @include breakpoint($sm) {
+    margin: 0 0 27px;
+  }
+
+  @include breakpoint($lg) {
+    flex-direction: row;
+    max-width: none;
+  }
 
   // .send-form__input
   &__input {
