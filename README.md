@@ -4,7 +4,7 @@
   <strong>
     Посмотреть проект можно по данной ссылке: 
   </strong>
-  https://gbxbro.github.io/excel-app/
+  https://gbxbro.github.io/nutnet-test/
 </p>
 <p>
   <strong>🔧 Функционал:</strong>
