@@ -6131,7 +6131,7 @@ template {
 .expertise-icon_heart,
 .expertise-icon_mobile {
     display: block;
-    background-image: url("../../images/sprites/expertise-sprite.png");
+    background-image: url("../images/sprites/expertise-sprite.png");
 }
 
 .expertise-icon_brush {
@@ -6177,7 +6177,7 @@ template {
 .socials-icon__twitter,
 .socials-icon__youtube {
     display: block;
-    background-image: url("../../images/sprites/socials-sprite.png");
+    background-image: url("../images/sprites/socials-sprite.png");
 }
 
 .socials-icon__dribble {
@@ -6547,7 +6547,7 @@ img {
 .video {
     padding-top: 200px;
     padding-bottom: 200px;
-    background: url("../../images/backgrounds/video-background.jpg") bottom center/100% 100% no-repeat;
+    background: url("../images/backgrounds/video-background.jpg") bottom center/100% 100% no-repeat;
 }
 
 .video__watch {
@@ -6851,7 +6851,7 @@ img {
 .testimonials {
     padding-top: 70px;
     padding-bottom: 70px;
-    background: url("../../images/backgrounds/testimonials-background.jpg") bottom center/100% 100% no-repeat;
+    background: url("../images/backgrounds/testimonials-background.jpg") bottom center/100% 100% no-repeat;
 }
 
 .testimonials__prefix-icon {
@@ -7153,7 +7153,7 @@ img {
     height: 19px;
     top: 0;
     left: 0;
-    background: url("../../images/icons/place.png") 0 0/cover no-repeat;
+    background: url("../images/icons/place.png") 0 0/cover no-repeat;
 }
 
 .address__phone {
@@ -7170,7 +7170,7 @@ img {
     height: 17px;
     top: 0;
     left: 0;
-    background: url("../../images/icons/call.png") 0 0/cover no-repeat;
+    background: url("../images/icons/call.png") 0 0/cover no-repeat;
 }
 
 .send-form {
@@ -7257,7 +7257,7 @@ img {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    background: url("../../images/icons/send.png") 0 0/cover no-repeat;
+    background: url("../images/icons/send.png") 0 0/cover no-repeat;
 }
 
 .socials-list {
